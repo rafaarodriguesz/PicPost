@@ -5,8 +5,9 @@ import styles from "./NavBar.module.css"
 const Navbar = () => {
   return (
     <div className={styles.NavContainer}>
-        <NavLink to={"/"} ><button>Home</button></NavLink>
-        <NavLink to={"/register"} ><button >Registrar</button></NavLink>
+        <NavLink to={"/"} className={styles.Links}>Home</NavLink>
+        <NavLink to={"/register"} className={styles.Links}>Registrar</NavLink>
+        <NavLink to={"/criar"} className={styles.Links}>Criar Post!</NavLink>
     </div>
   )
 }
